@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Maincs.css">
+        <link rel="icon" href="assets/Bloglogo.png">
+        <title>Bloggy</title>
+    </head>
+    <body>
+        <script src="js/Mainjs.js"></script> 
+
+        <div id="loader"></div>
+
+        <nav class="nav" id="homep">
+            <div class="menurow">
+                <div class="title"> 
+                    <p href="#aboutb" id="name" onclick="about()">  Bl<span id="nsplit">oggy</span></p>
+                </div>
+                <div>
+                    <ul class="items">
+                        <li id="fst" class="navli" onclick="about()">About</li>
+                        <li id="blgs" class="navli" onclick="blog()">Blogs</li>
+                        <li id="cnct" class="navli" onclick="cnct()">Contact-Us</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="summa">
+
+            <div class="slider">
+                <button id="prev" class="imgs" onclick="prev()"><</button><br>
+                <img src="assets/spy.jpg" id="img" draggable="false">
+                <button id="next" class="imgs" onclick="next()">></button><br>
+                <div class="ll">
+                <p id="imgp">SPY X FAMILY</p>
+                </div>
+            </div>
+
+            <div id="pic">
+                <img src="assets/jir.png" alt="" id="jir">
+                <p id="jirp">Let's Goooo</p>
+            </div>
+
+            <div id="blogs" class="reveal">
+                <h1 id="blgt">BLOGS</h1>
+                <div id="first" class="blgss" onclick="spy()">
+                    <img src="assets/spy.jpg" id="spyi" draggable="false">
+                    <p id="spyp">SPY X FAMILY</p>
+                </div>
+
+                <div id="second" class="blgss" onclick="demon()">
+                    <img src="assets/demon.jpg" id="dmi" draggable="false">
+                    <p id="dmp">DEMON SLAYER</p>
+                </div>
+
+                <div id="third" class="blgss" onclick="jjk()">
+                    <img src="assets/jjk.jpg" id="jjki" draggable="false">
+                    <p id="jjkp">JUJUTSU KAISEN  </p>
+                </div>
+
+                <div id="fourth" class="blgss" onclick="pkm()">
+                    <img src="assets/poke.jpg" id="pki" draggable="false">
+                    <p id="pkp">POKEMON</p>
+                </div>
+
+                <div id="fifth" class="blgss" onclick="csm()">
+                    <img src="assets/cs.jpg" id="csi" draggable="false">
+                    <p id="csp">CHAINSAW MAN</p>
+                </div>
+
+                <div id="sixth" class="blgss" onclick="nar()">
+                    <img src="assets/nar.jpg" id="nari" draggable="false">
+                    <p id="narp">NARUTO</p>
+                </div>
+
+                <div id="seventh" class="blgss" onclick="mov()">
+                    <img src="assets/mov.jpg" id="toki" draggable="false">
+                    <p id="tokp">TOKYO REVENGERS</p>
+                </div>
+
+                <p id="prevb" onclick="prevb()"><</p>
+                <p id="nextb" onclick="nextb()">></p>
+                <p class="home" onclick="home()">↑</p>
+            </div>
+
+        </div>
+        <div class="rgn"></div>
+        <div id="last">
+            <p>&#169; Made by - Pranesh Pandian S</p>
+        </div>
+
+    </body>
+</html>

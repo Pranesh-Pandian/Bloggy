@@ -1,0 +1,789 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+}
+*{ 
+    scroll-behavior: smooth;
+}
+.loader{
+    height: 100vh; 
+    width: 100%;
+    background: #000 url(../assets/Naruto/naruto\ loader.gif) no-repeat center center;
+    background-size: 30%;
+    position: fixed;
+    z-index: 99;
+}
+#load{
+    width: 4.5vw;
+    margin: 40vh 0 0 47.5vw;
+
+}
+
+.nav{
+    width: 100%;
+    min-height: 5.6vh;
+    background-color: grey;
+    position: fixed;
+    z-index: 2;
+    padding: 20px 2px 0 0;
+}
+#name{
+    margin: -10px 0 0 4.5vh;
+    font-size: 2.3vw;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0.3vw 0.4vh black;
+    position:absolute;
+    z-index: 1;
+}
+#name:hover{
+    cursor: pointer;
+}
+#nsplit{
+    color: rgb(240, 106, 5);
+}
+a{
+    text-decoration: none;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.3vw;
+    font-family:'Press Start 2P', cursive;
+    color: white;
+    text-shadow: 0.2vw 0.2vh black;
+    position: absolute;
+    margin: -15px 0 0 80px;
+}
+.items li{
+    padding: 15px;
+}
+#fst{
+    margin:0 0 0 60vw ;
+}
+.navli:hover{
+    cursor: pointer;
+    color: black;
+    text-shadow: 0.2vw 0.2vh aliceblue;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-color:rgb(255, 111, 0);
+    
+}
+
+#sidebar{
+    margin-top: 7vh;
+    height: 100vh;
+    width: 17vw;
+    background-color: black;
+    position: fixed;
+    color: white;
+}
+#sidebar ul{
+    list-style: none;
+    font-family: 'Press Start 2P';
+    font-size: 1.4vw;
+    margin: 0 0 0 -2.5vw;
+}
+#sidebar li{
+    padding: 4vh 0 4vh 2.5vh;
+}
+#fir:hover,#sec:hover,#chr:hover,#forf:hover,#mb:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#else{
+    width: 100%;
+    color: black;
+    margin: 8.2vh 0 0 35vw;
+    display:inline;
+}
+
+
+#spy{
+    height: 20vh;
+    width: 20vw;
+    margin: 10vh 0 1.5vh 18vw;
+}
+
+.rgn{
+    width: 80vw;
+    border: 0.3vh solid rgb(0, 0, 0);
+    margin: 1vh 0 0 18vw;
+}
+#fir{
+    margin-top:5vh ;
+}
+
+#syn,#auth,#char,#mblg,#last,#ff{
+    padding-left: 18vw;
+    word-wrap: break-word;
+}
+#syn h1,#auth h1,#char h1,#ff h1{
+    font-family: 'Press Start 2P';
+    text-decoration:underline;
+}
+
+#syn p,#auth p,#char p{
+    font-family: 'Poppins';
+    font-size: 1.5vw;
+    padding-right: 0.5vw;
+}
+#synh{
+    position: absolute;
+    margin: 26vh 0 0 0;
+
+}
+
+#poster{
+    height: 70vh;
+    width: 20vw;
+    float: right;
+    margin: 0 2vw 0 1vw;
+    border: 5px solid black;
+}
+
+#char h2{
+    font-family: 'Press Start 2P';
+    text-decoration:underline;
+}
+
+#chpos{
+    height: 55vh;
+    width: 15vw;
+    float: right;
+    margin: 0 2vw 0 1.5vw;
+}
+
+.dropdown{
+    display: none;
+    font-size: 0.5vw;
+}
+#chr:hover .dropdown{
+    display: block;
+}
+
+
+#mblg{
+    font-family: 'Press Start 2P';
+    text-decoration:underline;
+    height: 50vh;
+}
+
+.blgss{
+    position: absolute;
+    height: 40vh;
+    width: 26vw;
+    background-color: grey;
+    border-radius: 10px;
+}
+#jjki,#nari,#csi{
+    height: 33vh;
+    width: 26vw;
+    border-radius: 10px 10px 0 0;
+}
+#jjkp,#narp,#csp{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    margin: 1.5vh 0 0 0;
+    text-shadow: 3px 3px white;
+}
+#third:hover,#sixth:hover,#fifth:hover{
+    cursor: pointer;
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 5px 5px white;
+}
+#third:hover #jjkp,#sixth:hover #narp,#fifth:hover #csp{
+    color: white;
+    text-shadow: 3px 3px black;
+    cursor:pointer;
+}
+#sixth{
+    margin-left: 27vw;
+}
+#fifth{
+    margin-left: 54vw;
+}
+#last{
+    height: 5vh;
+}
+#last p{
+    font-family: 'Poppins';
+    font-size: 1.5vw;
+    padding-right: 0.5vw;
+    margin: 0 0 0 27vw;
+}
+
+#ff{
+    height: 25vh;
+}
+#ff p{
+    font-family: 'Press Start 2P';
+    font-size: 1.5vw;
+}
+.blggs{
+    position: absolute;
+    height: 12vh;
+    width: 26vw;
+    background-color: #000;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 225, 0);
+    margin: 1vh 0 0 0;
+    color: white;
+    
+}
+.blggs:hover{
+    cursor: pointer;
+}
+
+#logo{
+    float: left;
+    height: 10vh;
+    margin:  0.4vw 0 0 2vw ;
+}
+#buy{
+    margin: 1vh 0 0 27vw;
+}
+#merch{
+    margin: 1vh 0 0 54vw;
+}
+#wn{
+    margin: 5vh 0 ;
+}
+#bm{
+    position: absolute;
+    margin: 4.5vh 0 0 8vw;
+}
+
+#lid{
+    position: absolute;
+    
+}
+
+@media screen and (max-width:1500px) {
+   
+    .loader{
+        height: 100vh;
+        width: 100%;
+        background: #000 url(../assets/Naruto/naruto\ loader.gif) no-repeat center center;
+        background-size: 50%;
+        position: fixed;
+        z-index: 99;
+    } 
+    .nav{
+        width: 100%;
+        min-height: 6vh;
+        background-color: grey;
+        position: fixed;
+        z-index: 2;
+        padding: 20px 2px 0 0;
+    }
+    #name{
+        margin: -1.5vh 0 0 2.5vh;
+        font-size: 4vw;
+        color: black;
+        font-family: 'Press Start 2P', cursive;
+        text-shadow: 0.3vw 0.2vh black;
+        position:absolute;
+        z-index: 1;
+    }
+
+    .nav ul{
+        list-style-type: none;
+        font-size: 2.5vw;
+        font-family:'Press Start 2P', cursive;
+        color: white;
+        text-shadow: 0.3vw 0.3vh black;
+        position: absolute;
+        margin: -1.5vh 0 0 8vw;
+    }
+    .items li{
+        padding: 1vw;
+    }
+    #fst{
+        margin:0 0 0 33vw ;
+    }
+    .navli:hover{
+        cursor: pointer;
+        color: black;
+        text-shadow: 0.2vw 0.2vh aliceblue;
+    }
+
+    #sidebar{
+        margin-top: 7vh;
+        height: 120vh;
+        width: 25vw;
+        background-color: black;
+        position: fixed;
+        color: white;
+    }
+    #sidebar ul{
+        list-style: none;
+        font-family: 'Press Start 2P';
+        font-size: 2vw;
+        margin: 0 0 0 -2.5vw;
+    }
+    #sidebar li{
+        padding: 4vh 0 4vh 1.5vh;
+    }
+
+    #spy{
+        height: 18vh;
+        margin: 7vh 0 0 27vw;
+    }
+    .rgn{
+        width: 72vw;
+        border: 0.3vh solid rgb(0, 0, 0);
+        margin: 1vh 0 0 26.5vw;
+    }
+    #syn,#auth,#char,#mblg,#last,#ff{
+        padding-left: 27vw;
+        word-wrap: break-word;
+    }
+    #third:hover,#sixth:hover,#fifth:hover{
+        cursor: pointer;
+        transform: translateY(-2%);
+        box-shadow: 5px 5px 5px 5px white;
+    }
+    #third:hover #jjkp,#sixth:hover #narp,#fifth:hover #csp{
+        color: white;
+        text-shadow: 3px 3px black;
+        cursor:pointer;
+    }
+    #poster{
+        height: 60vh;
+        width: 30vw;
+        float: right;
+        margin: 0 2vw 0 1vw;
+        border: 3px solid black;
+    }
+    #syn p,#auth p,#char p{
+        font-family: 'Poppins';
+        font-size: 2.5vw;
+        padding-right: 0.5vw;
+    }
+    #char h1{
+        font-size: 4vw;
+    }
+    #char h2{
+        font-size: 3vw;
+    }
+    #chpos{
+        height: 50vh;
+        width: 25vw;
+        float: right;
+        margin: 0 2vw 0 1.5vw;
+    }
+    .blggs{
+        position: absolute;
+        height: 12vh;
+        width: 70vw;
+        background-color: #000;
+        border-radius: 10px;
+        border: 4px solid rgba(255, 225, 0);
+        margin: 1vh 0 0 0;
+        color: white;
+        
+    }
+    #buy{
+        margin: 29vh 0 0 0;
+    }
+    #merch{
+        margin: 15vh 0 0 0;
+    }
+    #ff{
+        height: 52vh;
+    }
+    #ff p{
+        font-family: 'Press Start 2P';
+        font-size: 4vw;
+    }
+    #wn{
+        margin: 4vh 0 ; 
+    }
+    #bm{
+        position: absolute;
+        margin: 4.5vh 0 0 22vw;
+    }  
+    #logo{
+        float: left;
+        height: 10vh;
+        margin:  1vh 0 0 8vw ;
+    }
+
+    .blgss{
+        position: absolute;
+        height: 40vh;
+        width: 70vw;
+        background-color: grey;
+        border-radius: 10px;
+    }
+    #jjki,#nari,#csi{
+        height: 33vh;
+        width: 70vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #jjkp,#narp,#csp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 2.5vw;
+        margin: 1.5vh 0 0 0;
+        text-shadow: 3px 3px white;
+    }
+    #sixth{
+        margin:84vh 0 0 0;
+    }
+    #fifth{
+        margin: 42vh 0 0 0;
+    }
+    #mblg{
+        font-family: 'Press Start 2P';
+        text-decoration:underline;
+        height: 140vh;
+    }
+    #last{
+        height: 10vh;
+    }
+    #last p{
+        font-family: 'Poppins';
+        font-size: 4vw;
+        padding-right: 0.5vw;
+        margin: 1vh 0 0 5vw;
+    }
+}
+
+@media screen and (max-width:1023px) {
+   
+    .loader{
+        height: 100vh;
+        width: 100%;
+        background: #000 url(../assets/Naruto/naruto\ loader.gif) no-repeat center center;
+        background-size: 60%;
+        position: fixed;
+        z-index: 99;
+    } 
+    #sidebar{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        min-height: 5vh;
+        background-color: grey;
+        position: fixed;
+        z-index: 2;
+        padding: 20px 2px 0 0;
+    }
+    #name{
+        margin: -1.5vh 0 0 2.5vh;
+        font-size: 4.5vw;
+        color: black;
+        font-family: 'Press Start 2P', cursive;
+        text-shadow: 0.3vw 0.2vh black;
+        position:absolute;
+        z-index: 1;
+    }
+
+    #abt,#cnct{
+        display: none;
+    }
+    .nav ul{
+        list-style-type: none;
+        font-size: 3.5vw;
+        font-family:'Press Start 2P', cursive;
+        color: white;
+        text-shadow: 0.2vw 0.2vh black;
+        position: absolute;
+        margin: -2vh 0 0 40vw;
+    }
+    .items li{
+        padding: 1vw;
+    }
+    #fst{
+        margin:0 0 0 33vw ;
+    }
+    #spy{
+        height: 15vh;
+        width: 30vw;
+        margin: 7vh 0 0 5vw;
+    }
+    .rgn{
+        width: 95vw;
+        border: 0.3vh solid rgb(0, 0, 0);
+        margin: 1vh 0 0 2.5vw;
+    }
+    #syn,#auth,#char,#mblg,#last,#ff{
+        padding-left: 4vw;
+        word-wrap: break-word;
+    }
+    #poster{
+        height: 60vh;
+        width: 30vw;
+        float: right;
+        margin: 0 2vw 0 1vw;
+        border: 3px solid black;
+    }
+    #syn p,#auth p,#char p{
+        font-family: 'Poppins';
+        font-size: 3.5vw;
+        padding-right: 0.5vw;
+    }
+
+    #chpos{
+        height: 40vh;
+        width: 30vw;
+        float: right;
+        margin: 0 2vw 0 1.5vw;
+    }
+    .blggs{
+        position: absolute;
+        height: 12vh;
+        width: 90vw;
+        background-color: #000;
+        border-radius: 10px;
+        border: 4px solid rgba(188, 155, 4);
+        margin: 1vh 0 0 0;
+        color: white;
+        
+    }
+    #buy{
+        margin: 29vh 0 0 0;
+    }
+    #merch{
+        margin: 15vh 0 0 0;
+    }
+    #ff{
+        height: 52vh;
+    }
+    #ff p{
+        font-family: 'Press Start 2P';
+        font-size: 4vw;
+    }
+    #wn{
+        margin: 4vh 0 ; 
+    }
+    #bm{
+        position: absolute;
+        margin: 4.5vh 0 0 22vw;
+    }  
+    #logo{
+        float: left;
+        height: 10vh;
+        margin:  1vh 0 0 8vw ;
+    }
+
+    .blgss{
+        position: absolute;
+        height: 40vh;
+        width: 90vw;
+        background-color: grey;
+        border-radius: 10px;
+    }
+    #jjki,#nari,#csi{
+        height: 33vh;
+        width: 90vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #jjkp,#narp,#csp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 3.5vw;
+        margin: 1.5vh 0 0 0;
+        text-shadow: 3px 3px white;
+    }
+    #sixth{
+        margin:84vh 0 0 0;
+    }
+    #fifth{
+        margin: 42vh 0 0 0;
+    }
+    #mblg{
+        font-family: 'Press Start 2P';
+        text-decoration:underline;
+        height: 150vh;
+    }
+    #mblg h1{
+        font-size: 6vw;
+    }
+    #last{
+        height: 15vh;
+    }
+    #last p{
+        font-family: 'Poppins';
+        font-size: 5vw;
+        padding-right: 0.5vw;
+        margin: 1vh 0 0 5vw;
+    }
+}   
+@media screen and (max-width:450px) {
+    #char h1{
+        font-size: 6vw;
+    }
+    #char h2{
+        font-size: 5vw;
+    }
+    .loader{
+        height: 100vh;
+        width: 100%;
+        background: #000 url(../assets/Naruto/naruto\ loader.gif) no-repeat center center;
+        background-size: 100%;
+        position: fixed;
+        z-index: 99;
+    } 
+    #sidebar{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        min-height: 3.6vh;
+        background-color: grey;
+        position: fixed;
+        z-index: 2;
+        padding: 20px 2px 0 0;
+    }
+    #name{
+        margin: -5px 0 0 2.5vh;
+        font-size: 5.5vw;
+        color: black;
+        font-family: 'Press Start 2P', cursive;
+        text-shadow: 0.3vw 0.2vh black;
+        position:absolute;
+        z-index: 1;
+    }
+    #abt,#cnct{
+        display: none;
+    }
+    .nav ul{
+        list-style-type: none;
+        font-size: 5vw;
+        font-family:'Press Start 2P', cursive;
+        color: white;
+        text-shadow: 0.2vw 0.2vh black;
+        position: absolute;
+        margin: -0.5vh 0 0 30vw;
+    }
+    .items li{
+        padding: 1vw;
+    }
+    #fst{
+        margin:0 0 0 33vw ;
+    }
+    #spy{
+        width: 50vw;
+        height: 10vh;
+        margin: 5vh 0 0 5vw;
+    }
+    .rgn{
+        width: 95vw;
+        border: 0.2vh solid rgb(0, 0, 0);
+        margin: 1vh 0 0 2.5vw;
+    }
+    #syn,#auth,#char,#mblg,#last,#ff{
+        padding-left: 5vw;
+        word-wrap: break-word;
+    }
+    #poster{
+        height: 35vh;
+        width: 40vw;
+        float: right;
+        margin: 0 2vw 0 1vw;
+        border: 3px solid black;
+    }
+    #syn p,#auth p,#char p{
+        font-family: 'Poppins';
+        font-size: 7vw;
+        padding-right: 0.5vw;
+    }
+
+    #chpos{
+        height: 40vh;
+        width: 40vw;
+        float: right;
+        margin: 0 2vw 0 1.5vw;
+    }
+    .blggs{
+        position: absolute;
+        height: 12vh;
+        width: 90vw;
+        background-color: #000;
+        border-radius: 10px;
+        border: 4px solid rgb(255, 225, 0);
+        margin: 1vh 0 0 0;
+        color: white;
+        
+    }
+    #buy{
+        margin: 29vh 0 0 0;
+    }
+    #merch{
+        margin: 15vh 0 0 0;
+    }
+    #wn{
+        margin: 5vh 0 ;
+    }
+    #ff{
+        height: 50vh;
+    }
+    #ff p{
+        font-family: 'Press Start 2P';
+        font-size: 5vw;
+    }
+    #wn{
+        margin: 5vh 0 ;
+    }
+    #bm{
+        position: absolute;
+        margin: 4.5vh 0 0 30vw;
+    }  
+    #logo{
+        float: left;
+        height: 10vh;
+        margin:  1vh 0 0 2vw ;
+    }
+
+    .blgss{
+        position: absolute;
+        height: 40vh;
+        width: 90vw;
+        background-color: grey;
+        border-radius: 10px;
+    }
+    #jjki,#nari,#csi{
+        height: 33vh;
+        width: 90vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #jjkp,#narp,#csp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        margin: 1.5vh 0 0 0;
+        text-shadow: 3px 3px white;
+    }
+    #sixth{
+        margin:84vh 0 0 0;
+    }
+    #fifth{
+        margin: 42vh 0 0 0;
+    }
+    #mblg{
+        font-family: 'Press Start 2P';
+        text-decoration:underline;
+        height: 140vh;
+    }
+    #last{
+        height: 5vh;
+    }
+    #last p{
+        font-family: 'Poppins';
+        font-size: 5vw;
+        padding-right: 0.5vw;
+        margin: 1vh 0 0 5vw;
+    }
+}

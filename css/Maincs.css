@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#loader{
+    height: 100vh;
+    width: 100%;
+    background:black url(../assets/Loader.gif) no-repeat center center;
+    position: fixed;
+    z-index: 99;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+nav{
+    background-color: grey;
+    padding:20px 2px 0 0 ;
+    height: 0px;
+    min-height: 40px;
+    overflow: hidden;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    font-family:'Press Start 2P', cursive;
+    color: white;
+    text-shadow: 3px 3px black;
+    position: absolute;
+    margin: -15px 0 0 80px;
+}
+
+.items li{
+    padding: 15px;
+}
+
+#fst{
+    margin:0 0 0 630px ;
+}
+.navli:hover{
+    cursor: pointer;
+    color: black;
+    text-shadow: 3px 3px aliceblue;
+}
+
+
+#name{
+    margin: -10px 0 0 40px;
+    font-size: 40px;
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px black;
+    position:absolute;
+    z-index: 1;
+}
+#name:hover{
+    cursor: pointer;
+}
+#nsplit{
+    color: rgb(240, 106, 5);
+}
+a{
+    text-decoration: none;
+}
+
+.summa{ 
+    width: 100%;
+    background-color: black;
+}
+
+.slider{
+    height: 90vh;
+    width: 100%;
+    margin: -0px 0 0 0;
+}
+#img{
+    height:75vh;
+    width:91vw;
+    margin: 20px 0 0 4.5vw;
+    border-radius: 10px 10px 0 0;
+}
+
+#ll{
+    display: flex;
+}   
+#imgp{
+    background-color: rgb(70, 70, 70);
+    width: 91vw;
+    height: 5vh;
+    border-radius: 0 0 10px 10px;
+    margin: -5px 0 0 4.5vw;
+    color: white;
+    text-align: center;
+    padding: 3vh 0 1vh 0;
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+    text-shadow: 3px 3px black;
+} 
+
+#prev{
+    position: absolute;
+    margin: 44vh 0 0 80px;
+    height: 40px;
+    width: 40px;
+    padding:2px 0px 0 0;
+    border-radius: 25px;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    border: 3px solid black;
+}
+#prev:hover{
+    cursor: pointer;
+}
+
+#next{
+    position: absolute;
+    margin: 42vh 0 0 -55px;
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    padding:4px 0 0 7px;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    border: 3px solid black;
+}   
+#next:hover{
+    cursor: pointer;
+}
+#pic{
+    display: none;
+}
+#blogs{
+    height: 100vh;
+    width: 100%;
+}
+
+.blgss{
+    position: absolute;
+    height: 40vh;
+    width: 26vw;
+    background-color: #ffffff90;
+    border-radius: 10px;
+}
+
+#first{
+    margin: 10.3vh 0 0 6.4vw;
+}
+#spyi{
+    height: 33vh;
+    width: 26vw;
+    border-radius: 10px 10px 0 0;
+}
+#spyp{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    margin: 1.5vh 0 0 0;
+    text-shadow: 3px 3px white;
+}
+#first:hover{
+    cursor: pointer;
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 5px 5px white;
+}
+#first:hover #spyp{
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+#second{
+    margin: 10.3vh 0 0 36.4vw;
+}
+#dmi{
+    height: 33vh;
+    width: 26vw;
+    border-radius: 10px 10px 0 0;
+}
+#dmp{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    margin: 1.5vh 0 0 0;
+    text-shadow: 3px 3px white;
+}
+#second:hover{
+    cursor: pointer;
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 5px 5px white;
+}
+#second:hover #dmp{
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+
+#third{
+    margin: 10.3vh 0 0 66.3vw;
+}
+#jjki{
+    height: 33vh;
+    width: 26vw;
+    border-radius: 10px 10px 0 0;
+}
+#jjkp{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    margin: 1.5vh 0 0 0;
+    text-shadow: 3px 3px white;
+}   
+#third:hover{
+    cursor: pointer;
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 5px 5px white;
+}
+#third:hover #jjkp{
+    color: white;
+    text-shadow: 3px 3px black;
+    cursor:pointer;
+}
+
+#fourth{
+    margin:56.2vh 0 0 6.4vw;
+}
+#pki{
+    height: 33vh;
+    width: 26vw;
+    border-radius: 10px 10px 0 0;
+}
+#pkp{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    margin: 1.5vh 0 0 0;
+    text-shadow: 3px 3px white;
+}
+#fourth:hover{
+    cursor: pointer;
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 5px 5px white;
+}
+#fourth:hover #pkp{
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+#fifth{
+    margin: 56.2vh 0 0 36.4vw;
+}
+#csi{
+    height: 33vh;
+    width: 26vw;
+    border-radius: 10px 10px 0 0;
+}
+#csp{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    margin: 1.5vh 0 0 0;
+    text-shadow: 3px 3px white;
+}
+#fifth:hover{
+    cursor: pointer;
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 5px 5px white;
+}
+#fifth:hover #csp{
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+#sixth{
+    margin: 56.2vh 0 0 66.3vw;
+}
+#nari{
+    height: 33vh;
+    width: 26vw;
+    border-radius: 10px 10px 0 0;
+}
+#narp{
+    text-align: center;
+    font-family: 'Press Start 2P';
+    font-size: 25px;
+    margin: 1.5vh 0 0 0;
+    text-shadow: 3px 3px white;
+}
+#sixth:hover{
+    cursor: pointer;
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 5px 5px white;
+}
+#sixth:hover #narp{
+    color: white;
+    text-shadow: 3px 3px black;
+}
+#seventh{
+    display: none;
+}
+
+#blgt{
+    position: absolute;
+    font-family: 'Press Start 2P';
+    color: white;
+    margin: 3vh 0 0 45vw;
+}
+
+#nextb{
+    color: white;
+    font-family: 'Press Start 2P';
+    position: absolute;
+    margin: 50vh 0 0 94.5vw;
+    font-size: 45px;
+}
+#nextb:hover{
+    cursor: pointer;
+}
+
+#prevb{
+    color: white;
+    font-family: 'Press Start 2P';
+    position: absolute;
+    font-size: 45px;
+    margin: 50vh 0 0 1vw;
+    display: none;
+}
+#prevb:hover{
+    cursor: pointer;
+}
+
+.home{
+    color: white;
+    position: absolute  ;
+    font-size: 35px;
+    font-family: 'Press Start 2P';
+    margin: 93vh 0 0 96vw;
+  }
+  .home:hover{
+    cursor: pointer;
+  }
+
+.reveal{
+    position: relative;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateX(0px);
+    opacity: 1;
+} 
+
+.rgn{
+    border: 2px solid white;
+    margin: 0 2vw 0 2vw;
+}
+#last p{
+    font-family: 'Poppins';
+    color: white;
+    margin: 1vh 0 1vh 39vw;
+    font-size: 1.5vw;
+}
+
+
+@media screen and (min-width:1023px) {
+    
+    #name{
+        margin: -10px 0 0 20px;
+        font-size: 35px;
+        color: black;
+        font-family: 'Press Start 2P', cursive;
+        text-shadow: 4px 4px black;
+        position:absolute;
+        z-index: 1;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+        font-size: 1.5vw;
+        font-family:'Press Start 2P', cursive;
+        color: white;
+        text-shadow: 3px 3px black;
+        position: absolute;
+        margin: -15px 0 0 80px;
+    }
+    #fst{
+        margin:0 0 0 50vw ;
+    }
+    .items li{
+        padding: 13px;
+    }
+    .blgp{
+        font-size: 10px;
+    }
+    #spyp,#dmp,#jjkp,#pkp,#csp,#narp{
+        font-size: 1.7vw;
+    }
+    #nextb{
+        color: white;
+        font-family: 'Press Start 2P';
+        position: absolute;
+        margin: 50vh 0 0 94vw;
+        font-size: 45px;
+    }
+    #prevb{
+        color: white;
+        font-family: 'Press Start 2P';
+        position: absolute;
+        font-size: 45px;
+        margin: 50vh 0 0 0.5vw;
+        display: none;
+    }
+}
+@media screen and (min-width:1441px) {
+    #name{
+        margin: -10px 0 0 20px;
+        font-size: 35px;
+        color: black;
+        font-family: 'Press Start 2P', cursive;
+        text-shadow: 4px 4px black;
+        position:absolute;
+        z-index: 1;
+    }
+    ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.4vw;
+    font-family:'Press Start 2P', cursive;
+    color: white;
+    text-shadow: 3px 3px black;
+    position: absolute;
+    margin: -15px 0 0 80px;
+}
+    #fst{
+        margin:0 0 0 56vw ;
+    }
+    .items li{
+        padding:10px 15px 0 15px;
+    }
+    .blgp{
+        font-size: 10px;
+    }
+    #spyp,#dmp,#jjkp,#pkp,#csp,#narp{
+        font-size: 1.7vw;
+    }
+    
+}
+
+@media screen and (max-width:1023px) {
+    .items{
+        display: none;
+    }
+    #name{
+        font-size: 5.5vw;
+        margin: -1.5vh 0 0 35vw;
+        text-shadow: 4px 3px black;
+    }
+    #loader{
+        height: 100vh;
+        width: 100%;
+        background:black url(../assets/Loader.gif) no-repeat center center  ;
+        background-size: 50%;
+        position: fixed;
+        z-index: 99;
+    }
+
+    #img{
+        height:30vh;
+        width: 90vw;
+        margin: 20px 0 0 5.4vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #imgp{
+        background-color: rgb(70, 70, 70);
+        width: 90vw;
+        height: 5vh;
+        border-radius: 0 0 10px 10px;
+        margin: -5px 0 0 5.4vw;
+        color: white;
+        text-align: center;
+        padding: 3vh 0 1vh 0;
+        font-family: 'Press Start 2P';
+        font-size: 6vw;
+        text-shadow: 3px 3px black;
+    } 
+
+    .slider{
+        height: 50vh;
+        width: 100%;
+        margin: -0px 0 0 0;
+    }
+    #prev{
+        position: absolute;
+        margin: 45vh 0 0 10vw;
+        height: 40px;
+        width: 40px;
+        padding:2px 0px 0 0;
+        border-radius: 2px;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: black;
+        color: white;
+    }
+    #next{
+        position: absolute;
+        margin: 42.9vh 0 0 -9vw;
+        height: 40px;
+        width: 40px;
+        border-radius: 2px;
+        padding:4px 0 0 7px;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: black;
+        color: white;
+    } 
+
+    #pic{
+        display: block;
+    }
+    #jir{
+        width: 40vw;
+        height: 30vh;
+        margin: 0 0 0 28vw;
+    }
+    #jirp{
+        color: white;
+        font-family: 'Press Start 2P';
+        font-size: 8vw;
+        margin:  2vh 0 2vh 7vw;
+    }
+
+    #blgt{
+        font-size: 8vw;
+        margin: 2vh 0 0 31vw;
+    }
+    #nextb{
+        display: none;
+    }
+    .home{
+        display: none;
+    }
+    .blgss{
+        position: absolute;
+        height: 40vh;
+        width: 88vw;
+        background-color: #ffffff90;
+        border-radius: 10px;
+    }
+    
+    #first{
+        margin: 10.3vh 0 0 6.4vw;
+    }
+    #second{
+        margin: 55vh 0 0 6.4vw;
+    }
+    #third{
+        margin: 100vh 0 0 6.4vw;
+    }
+    #fourth{
+        margin:145vh 0 0 6.4vw;
+    }
+    #fifth{
+        margin: 190vh 0 0 6.4vw;
+    }
+    #sixth{
+        margin: 235vh 0 0 6.4vw;
+    }
+    #seventh{
+        display: block;
+        margin: 280vh 0 0 6.4vw;
+    }
+
+
+    #spyi{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #dmi{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #jjki{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #pki{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #csi{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #nari{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #toki{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #spyp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5vw;
+        text-shadow: 2px 2px white;
+    }
+    
+    #dmp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5vw;
+        text-shadow: 2px 2px white;
+    }
+    
+    #jjkp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5vw;
+        text-shadow: 2px 2px white;
+    }   
+    
+    #pkp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5vw;
+        text-shadow: 2px 2px white;
+    }
+    
+    #csp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5vw;
+        text-shadow: 2px 2px white;
+    }
+    
+    #narp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5vw;
+        text-shadow: 2px 2px white;
+    }
+    #tokp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5vw;
+        text-shadow: 2px 2px white;
+        margin: 1vh 0 0 0 ;
+    }
+    
+    #blogs{
+        min-height: 323vh;
+        width: 100%;
+    }
+    #last p{
+        font-family: 'Poppins';
+        color: white;
+        margin: 1vh 0 1vh 18vw;
+        font-size: 4vw;
+    }
+
+    
+}
+@media screen and (max-width: 450px){
+
+    .items{
+        display: none;
+    }
+    #name{
+        font-size: 8vw;
+        margin: -1vh 0 0 25vw;
+        text-shadow: 4px 3px black;
+    }
+    #loader{
+        height: 100vh;
+        width: 100%;
+        background:black url(../assets/Loader.gif) no-repeat center center  ;
+        background-size: 50%;
+        position: fixed;
+        z-index: 99;
+    }
+
+    #img{
+        height:30vh;
+        width: 90vw;
+        margin: 20px 0 0 5.4vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #imgp{
+        background-color: rgb(70, 70, 70);
+        width: 90vw;
+        height: 5vh;
+        border-radius: 0 0 10px 10px;
+        margin: -5px 0 0 5.4vw;
+        color: white;
+        text-align: center;
+        padding: 3vh 0 1vh 0;
+        font-family: 'Press Start 2P';
+        font-size: 6vw;
+        text-shadow: 3px 3px black;
+    } 
+
+    .slider{
+        height: 50vh;
+        width: 100%;
+        margin: -0px 0 0 0;
+    }
+    #prev{
+        position: absolute;
+        margin: 45vh 0 0 10vw;
+        height: 40px;
+        width: 40px;
+        padding:2px 0px 0 0;
+        border-radius: 2px;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: black;
+        color: white;
+    }
+    #next{
+        position: absolute;
+        margin: 42.9vh 0 0 -13vw;
+        height: 40px;
+        width: 40px;
+        border-radius: 2px;
+        padding:4px 0 0 7px;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        border: 3px solid rgb(255, 255, 255);
+        background-color: black;
+        color: white;
+    } 
+
+    #pic{
+        display: block;
+    }
+    #jir{
+        width: 60vw;
+        height: 35vh;
+        margin: 0 0 0 15vw;
+    }
+    #jirp{
+        color: white;
+        font-family: 'Press Start 2P';
+        font-size: 8vw;
+        margin:  2vh 0 2vh 5vw;
+    }
+
+    #blgt{
+        font-size: 8vw;
+        margin: 2vh 0 0 31vw;
+    }
+    #nextb{
+        display: none;
+    }
+    .home{
+        display: none;
+    }
+    .blgss{
+        position: absolute;
+        height: 40vh;
+        width: 88vw;
+        background-color: #ffffff90;
+        border-radius: 10px;
+    }
+    
+    #first{
+        margin: 10.3vh 0 0 6.4vw;
+    }
+    #second{
+        margin: 55vh 0 0 6.4vw;
+    }
+    #third{
+        margin: 100vh 0 0 6.4vw;
+    }
+    #fourth{
+        margin:145vh 0 0 6.4vw;
+    }
+    #fifth{
+        margin: 190vh 0 0 6.4vw;
+    }
+    #sixth{
+        margin: 235vh 0 0 6.4vw;
+    }
+    #seventh{
+        display: block;
+        margin: 280vh 0 0 6.4vw;
+    }
+
+
+    #spyi{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #dmi{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #jjki{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #pki{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #csi{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #nari{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+    #toki{
+        height: 33vh;
+        width: 88vw;
+        border-radius: 10px 10px 0 0;
+    }
+
+    #spyp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        text-shadow: 2px 2px white;
+    }
+    
+    #dmp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        text-shadow: 2px 2px white;
+    }
+    
+    #jjkp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5.5vw;
+        text-shadow: 2px 2px white;
+    }   
+    
+    #pkp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        text-shadow: 2px 2px white;
+    }
+    
+    #csp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        text-shadow: 2px 2px white;
+    }
+    
+    #narp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 25px;
+        text-shadow: 2px 2px white;
+    }
+    #tokp{
+        text-align: center;
+        font-family: 'Press Start 2P';
+        font-size: 5.5vw;
+        text-shadow: 2px 2px white;
+    }
+    
+    #blogs{
+        min-height: 323vh;
+        width: 100%;
+    }
+    #last p{
+        font-family: 'Poppins';
+        color: white;
+        margin: 1vh 0 1vh 18vw;
+        font-size: 4vw;
+    }
+}
+

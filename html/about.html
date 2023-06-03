@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/Bloglogo.png">
+    <title>Bloggy - About Us</title>
+</head>
+<body>
+    <img src="../assets/bg2.png" id="pic1" draggable="false">
+    <img src="../assets/bg1.png" id="pic2" draggable="false">
+</body>
+<style>
+    body{
+        margin: 0;
+    }
+    #pic1{
+        width: 100vw;
+        height:100vh;
+        margin: 0;
+    }
+    #pic2{
+        display: none;
+    }
+    @media screen and (max-width:767px) {
+        body{
+            margin: 0;
+        }
+        #pic1{
+            display: none;
+        }
+        #pic2{
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+        
+    }
+</style>
+</html>
